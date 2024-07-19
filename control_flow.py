@@ -77,9 +77,18 @@
 
 # Short-circuit Evaluation
 
-high_income = False
-good_credit = True
-student = True
+# high_income = False
+# good_credit = True
+# student = True
 
-if high_income or good_credit or not student:
+# if high_income or good_credit or not student:
+#     print("Eligible")
+
+
+# Chaining comparison
+
+# age should be between 18 and 65
+
+age = 22
+if 18 <= age < 65:
     print("Eligible")
