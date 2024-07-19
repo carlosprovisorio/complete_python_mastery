@@ -66,11 +66,20 @@
 #     print("Not Eligible")
 
 
+# high_income = False
+# good_credit = True
+# student = False
+
+# if (high_income or good_credit) and not student:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# Short-circuit Evaluation
+
 high_income = False
 good_credit = True
-student = False
+student = True
 
-if (high_income or good_credit) and not student:
+if high_income or good_credit or not student:
     print("Eligible")
-else:
-    print("Not Eligible")
