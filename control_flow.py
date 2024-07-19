@@ -89,6 +89,15 @@
 
 # age should be between 18 and 65
 
-age = 22
-if 18 <= age < 65:
-    print("Eligible")
+# age = 22
+# if 18 <= age < 65:
+#     print("Eligible")
+
+
+# Quiz
+if 10 == "10":
+    print("a")
+elif "bag" > "apple" and "bag" > "cat":
+    print("b")
+else:
+    print("c")
