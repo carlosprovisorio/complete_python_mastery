@@ -94,10 +94,75 @@
 #     print("Eligible")
 
 
-# Quiz
-if 10 == "10":
-    print("a")
-elif "bag" > "apple" and "bag" > "cat":
-    print("b")
-else:
-    print("c")
+# # Quiz
+# if 10 == "10":
+#     print("a")
+# elif "bag" > "apple" and "bag" > "cat":
+#     print("b")
+# else:
+#     print("c")
+
+# For loops
+
+# for number in range(3):
+#     print("Attempt")
+
+# for number in range(1, 4):
+#     print("Attempt", number, number * ".")
+
+
+# for number in range(1, 20, 2):
+#     print("Attempt", number, number * ".")
+
+
+# For..Else
+# successful = True
+# for number in range(3):
+#     print("Attempt")
+#     if successful:
+#         print("Successful")
+#         break
+
+
+# successful = False
+# for number in range(3):
+#     print("Attempt")
+#     if successful:
+#         print("Successful")
+#         break
+#     else:
+#         print("Attempted 3 times and failed")
+
+
+# Nested Loops
+# for x in range(5):
+#     for y in range(3):
+#         print(f"({x}, {y})")
+
+# for carlos in range(5):
+#     for carol in range(3):
+#         print(f"({carlos}, {carol})")
+
+# Iterables
+# for x in "Python":
+#     print(x)
+
+# for y in [1, 2, 3, 4, 5]:
+#     print(y)
+
+# While Loops
+# number = 100
+# while number > 0:
+#     print(number)
+#     number //= 2
+
+# command = ""
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+while True:
+    command = input(">")
+    print("ECHO", command)
+    if command.lower() == "quit":
+        break
