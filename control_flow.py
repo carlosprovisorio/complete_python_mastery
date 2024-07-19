@@ -161,8 +161,22 @@
 #     command = input(">")
 #     print("ECHO", command)
 
-while True:
-    command = input(">")
-    print("ECHO", command)
-    if command.lower() == "quit":
-        break
+# while True:
+#     command = input(">")
+#     print("ECHO", command)
+#     if command.lower() == "quit":
+#         break
+
+
+# Quizz - my solution
+# for number in range(2, 10, 2):
+#     print(number)
+# print("We have 4 even numbers")
+
+# expected answer
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
+print(f"We have {count} even numbers")
