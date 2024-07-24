@@ -45,3 +45,49 @@
 
 
 # print(multiply(2, 3, 4, 5))
+
+# xxargs
+
+
+# def save_user(**user):
+#     print(user)
+
+
+# save_user(id=1, name="John", age=22)
+
+
+# def save_user(**user):
+#     print(user["id"])
+
+
+# save_user(id=1, name="john", age=22)
+
+
+# Scope
+# message = "a"  # global variable
+
+
+# def greet(name):
+#     global message #bad practice
+#     message = "b"
+
+
+# greet("Carlos")
+# print(message)
+
+
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    return total
+
+
+print("Start")
+print(multiply(1, 2, 3))
+
+# click on the line to add a breakpoint
+# F5 to initiate the debugger
+# F10 to move to the next line
+# F11 to jump to the beginning of the function
+# Shift F11 to skip the debugger before it execute all lines
