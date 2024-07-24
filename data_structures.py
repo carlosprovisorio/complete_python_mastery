@@ -38,6 +38,22 @@
 #     print(letter[0], letter[1])
 
 # using the unpacking approach
+# letters = ["a", "b", "c"]
+# for index, letter in enumerate(letters):
+#     print(index, letter)
+
+
+# adding or removing items
+
 letters = ["a", "b", "c"]
-for index, letter in enumerate(letters):
-    print(index, letter)
+
+# Add
+letters.append("d")
+letters.insert(0, "_")
+
+# Remove
+letters.pop(0)
+letters.remove("b")
+del letters[0:3]
+letters.clear()
+print(letters)
