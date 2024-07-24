@@ -76,18 +76,31 @@
 # print(message)
 
 
-def multiply(*numbers):
-    total = 1
-    for number in numbers:
-        total *= number
-    return total
+# def multiply(*numbers):
+#     total = 1
+#     for number in numbers:
+#         total *= number
+#     return total
 
 
-print("Start")
-print(multiply(1, 2, 3))
+# print("Start")
+# print(multiply(1, 2, 3))
 
 # click on the line to add a breakpoint
 # F5 to initiate the debugger
 # F10 to move to the next line
 # F11 to jump to the beginning of the function
 # Shift F11 to skip the debugger before it execute all lines
+
+
+def fizz_buzz(input):
+    if (input % 3 == 0) and (input % 5 == 0):
+        return "FizzBuzz"
+    if input % 3 == 0:
+        return "Fizz"
+    if input % 5 == 0:
+        return "Buzz"
+    return input
+
+
+print(fizz_buzz(15))
