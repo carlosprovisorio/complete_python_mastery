@@ -26,8 +26,18 @@
 # first, second, third = numbers
 # print(first, second, third)
 
-numbers = [1, 2, 3, 4, 4, 4, 4, 4, 9]
-# first, second, *other = numbers
-first, *other, last = numbers
-print(first, last)
-print(other)
+# numbers = [1, 2, 3, 4, 4, 4, 4, 4, 9]
+# # first, second, *other = numbers
+# first, *other, last = numbers
+# print(first, last)
+# print(other)
+
+# Looping over lists
+# letters = ["a", "b", "c"]
+# for letter in enumerate(letters):
+#     print(letter[0], letter[1])
+
+# using the unpacking approach
+letters = ["a", "b", "c"]
+for index, letter in enumerate(letters):
+    print(index, letter)
