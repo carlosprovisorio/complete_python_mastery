@@ -45,15 +45,24 @@
 
 # adding or removing items
 
+# letters = ["a", "b", "c"]
+
+# # Add
+# letters.append("d")
+# letters.insert(0, "_")
+
+# # Remove
+# letters.pop(0)
+# letters.remove("b")
+# del letters[0:3]
+# letters.clear()
+# print(letters)
+
+
+# Finding Items
+
 letters = ["a", "b", "c"]
 
-# Add
-letters.append("d")
-letters.insert(0, "_")
-
-# Remove
-letters.pop(0)
-letters.remove("b")
-del letters[0:3]
-letters.clear()
-print(letters)
+print(letters.count("d"))
+if "d" in letters:
+    print(letters.index("d"))
