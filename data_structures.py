@@ -61,8 +61,37 @@
 
 # Finding Items
 
-letters = ["a", "b", "c"]
+# letters = ["a", "b", "c"]
 
-print(letters.count("d"))
-if "d" in letters:
-    print(letters.index("d"))
+# print(letters.count("d"))
+# if "d" in letters:
+#     print(letters.index("d"))
+
+# Sorting lists
+
+# numbers = [3, 51, 2, 8, 9]
+# # numbers.sort()  # Ascending order
+# # numbers.sort(reverse=True)  # Descending order
+# print(sorted(numbers))  # It sort a new list without modifying the initial list
+# print(
+#     sorted(numbers, reverse=True)
+# )  # It sort a new list without modifying the initial list
+# print(numbers)  # original list
+
+# sorting a tuple
+items = [
+    ("Product", 10),
+    ("Product", 9),
+    ("Product", 12),
+]
+
+
+def sorting_item(item):
+    return item[1]
+
+
+items.sort(key=sorting_item)
+print(items)
+
+
+# lambda function
