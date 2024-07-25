@@ -79,11 +79,11 @@
 # print(numbers)  # original list
 
 # sorting a tuple
-items = [
-    ("Product", 10),
-    ("Product", 9),
-    ("Product", 12),
-]
+# items = [
+#     ("Product", 10),
+#     ("Product", 9),
+#     ("Product", 12),
+# ]
 
 
 # def sorting_item(item):
@@ -97,5 +97,20 @@ items = [
 # lambda function - Better option than the above
 # it's a one line anonimous function
 
-items.sort(key=lambda item: item[1])
-print(items)
+# items.sort(key=lambda item: item[1])
+# print(items)
+
+# Map Function
+items = [
+    ("Product", 10),
+    ("Product", 9),
+    ("Product", 12),
+]
+
+# prices = []
+# for item in items:
+#     prices.append(item[1])
+
+# Instead use Map function
+prices = list(map(lambda item: item[1], items))
+print(prices)
