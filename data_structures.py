@@ -86,12 +86,16 @@ items = [
 ]
 
 
-def sorting_item(item):
-    return item[1]
+# def sorting_item(item):
+#     return item[1]
 
 
-items.sort(key=sorting_item)
+# items.sort(key=sorting_item)
+# print(items)
+
+
+# lambda function - Better option than the above
+# it's a one line anonimous function
+
+items.sort(key=lambda item: item[1])
 print(items)
-
-
-# lambda function
