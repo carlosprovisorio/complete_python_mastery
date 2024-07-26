@@ -119,56 +119,68 @@
 
 
 # This approach uses a simple iterative method which is easy to understand and implement.
-def fibonacci_junior(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
+# def fibonacci_junior(n):
+#     if n <= 0:
+#         return []
+#     elif n == 1:
+#         return [0]
 
-    sequence = [0, 1]
-    for i in range(2, n):
-        sequence.append(sequence[-1] + sequence[-2])
-    return sequence
-
-
-print(fibonacci_junior(10))
+#     sequence = [0, 1]
+#     for i in range(2, n):
+#         sequence.append(sequence[-1] + sequence[-2])
+#     return sequence
 
 
-# This approach uses a recursive method with memoization to improve efficiency.
-def fibonacci_intermediate(n, memo=None):
-    if memo is None:
-        memo = {}
-    if n in memo:
-        return memo[n]
-    if n <= 0:
-        return []
-    if n == 1:
-        return [0]
-    if n == 2:
-        return [0, 1]
-
-    memo[n] = fibonacci_intermediate(n - 1, memo) + [
-        fibonacci_intermediate(n - 1, memo)[-1]
-        + fibonacci_intermediate(n - 2, memo)[-1]
-    ]
-    return memo[n]
+# print(fibonacci_junior(10))
 
 
-print(fibonacci_intermediate(10))
+# # This approach uses a recursive method with memoization to improve efficiency.
+# def fibonacci_intermediate(n, memo=None):
+#     if memo is None:
+#         memo = {}
+#     if n in memo:
+#         return memo[n]
+#     if n <= 0:
+#         return []
+#     if n == 1:
+#         return [0]
+#     if n == 2:
+#         return [0, 1]
+
+#     memo[n] = fibonacci_intermediate(n - 1, memo) + [
+#         fibonacci_intermediate(n - 1, memo)[-1]
+#         + fibonacci_intermediate(n - 2, memo)[-1]
+#     ]
+#     return memo[n]
+
+
+# print(fibonacci_intermediate(10))
 
 
 # This approach uses a generator for better memory efficiency,
 # especially useful for generating large sequences.
 
 
-def fibonacci_advanced(n):
-    def generator():
-        a, b = 0, 1
-        for _ in range(n):
-            yield a
-            a, b = b, a + b
+# def fibonacci_advanced(n):
+#     def generator():
+#         a, b = 0, 1
+#         for _ in range(n):
+#             yield a
+#             a, b = b, a + b
 
-    return list(generator())
+#     return list(generator())
 
 
-print(fibonacci_advanced(10))
+# print(fibonacci_advanced(10))
+
+
+# Filter function
+
+items = [
+    ("Product1", 10),
+    ("Product2", 9),
+    ("Product3", 12),
+]
+
+filtered = list(filter(lambda item: item[1] >= 10, items))
+print(filtered)
