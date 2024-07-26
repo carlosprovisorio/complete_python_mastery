@@ -176,11 +176,33 @@
 
 # Filter function
 
-items = [
-    ("Product1", 10),
-    ("Product2", 9),
-    ("Product3", 12),
-]
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 9),
+#     ("Product3", 12),
+# ]
 
-filtered = list(filter(lambda item: item[1] >= 10, items))
-print(filtered)
+# filtered = list(filter(lambda item: item[1] >= 10, items))
+# print(filtered)
+
+# List comprehensions
+
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 9),
+#     ("Product3", 12),
+# ]
+
+# prices = list(map(lambda item: item[1], items))  # mappin
+# prices = [item[1] for item in items]  # alternative more readabl
+# filtered = list(filter(lambda item: item[1] >= 10, items))
+# filtered = [item for item in items if item[1] >= 10]
+
+
+# zip Function
+# combine multiple lists
+
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+print(list(zip(list1, list2)))
