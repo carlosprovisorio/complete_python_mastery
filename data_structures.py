@@ -330,11 +330,26 @@
 # print(values)
 
 
-# Generator Expressions
+# # Generator Expressions
 
-from sys import getsizeof
+# from sys import getsizeof
 
-values = (x * 2 for x in range(100))
-print("gen:", getsizeof(values))
-for x in values:
-    print(x)
+# values = (x * 2 for x in range(100))
+# print("gen:", getsizeof(values))
+# for x in values:
+#     print(x)
+
+
+# Unpacking Operator
+# List
+values = list(range(5))
+values = [*range(5), *"Hello"]
+print(values)
+
+
+# Dictionaries
+
+first = {"x": 1}
+second = {"x": 10, "y": 2}
+combined = {**first, **second, "z": 1}
+print(combined)
