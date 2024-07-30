@@ -279,6 +279,7 @@
 
 
 # Sets
+# Sets is an unordered collection of unique items. We can't have duplicates and its
 
 numbers = [1, 1, 2, 3, 4]
 first = set(numbers)
