@@ -294,18 +294,37 @@
 #     print("yes")
 
 
-#Dictionaries - works like phone book phone -> contact or a 
+# Dictionaries - works like phone book phone -> contact or a
 # A collection of key -> value pairs
 
-point = {"x": 1, "y": 2}
-point = dict(x=1, y=2)
-point = ["x"] = 10
-point = ["z"] = 20
-if "a" in point:
-    print(point["a"])
-print(point.get("a", 0))
-del point["x"]
-print(point)
-for key, value in point.items():
-    print(key, value)
+# point = {"x": 1, "y": 2}
+# point = dict(x=1, y=2)
+# point = ["x"] = 10
+# point = ["z"] = 20
+# if "a" in point:
+#     print(point["a"])
+# print(point.get("a", 0))
+# del point["x"]
+# print(point)
+# for key, value in point.items():
+#     print(key, value)
 
+# dictionary comprehensions
+# values = []  # defining an empty list
+# for x in range(5):  # iterating over this range object
+#     values.append(
+#         x * 2
+#     )  # On each iteration you get the x multiplied by 2 and added to the list
+# print(values)
+
+# but with comprehensions this code will be like
+# values = [x * 2 for x in range(5)] # this will give the same list output
+# print(values)
+
+# We can also use the Comprehensions with Sets and dictionaries
+values = {x * 2 for x in range(5)}  # we get a Set of even numbers
+print(values)
+
+# Dictionary
+values = {x: x * 2 for x in range(5)}
+print(values)
