@@ -340,16 +340,56 @@
 #     print(x)
 
 
-# Unpacking Operator
-# List
-values = list(range(5))
-values = [*range(5), *"Hello"]
-print(values)
+# # Unpacking Operator
+# # List
+# values = list(range(5))
+# values = [*range(5), *"Hello"]
+# print(values)
 
 
-# Dictionaries
+# # Dictionaries
 
-first = {"x": 1}
-second = {"x": 10, "y": 2}
-combined = {**first, **second, "z": 1}
-print(combined)
+# first = {"x": 1}
+# second = {"x": 10, "y": 2}
+# combined = {**first, **second, "z": 1}
+# print(combined)
+
+sentence = "This is a common interview question"
+
+cleaned_sentence = sentence.lower().replace(" ", "")
+
+char_count = {}
+for char in cleaned_sentence:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+
+most_reputable_char = None
+max_count = 0
+
+for char, count in char_count.items():
+    if count > max_count:
+        max_count = count
+        most_reputable_char = char
+
+
+print(
+    f"The most reputable character is '{most_reputable_char}' with {max_count} occurrences."
+)
+
+
+# or
+
+from collections import Counter
+
+sentence = "This is a common interview question"
+cleaned_sentence = sentence.lower().replace(" ", "")
+
+char_count = Counter(cleaned_sentence)
+
+most_reputable_char = char_count.most_common(1)[0]
+
+print(
+    f"The most reputable character is '{most_reputable_char[0]}' with {most_reputable_char[1]} occurrences."
+)
