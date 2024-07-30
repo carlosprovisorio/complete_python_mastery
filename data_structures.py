@@ -272,7 +272,22 @@
 # Arrays
 # Use arrays only if you are using large sequence of numbers #like 1000s
 # items on the list otherwise use lists or tuples by default
-from array import array
+# from array import array
 
-numbers = array("i", [1, 2, 3])
-numbers[0]
+# numbers = array("i", [1, 2, 3])
+# numbers[0]
+
+
+# Sets
+
+numbers = [1, 1, 2, 3, 4]
+first = set(numbers)
+second = {1, 5}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(first ^ second)
+
+if 1 in first:
+    print("yes")
