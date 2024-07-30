@@ -235,24 +235,35 @@
 # Tuples = Read only list immutable
 # we can't add or remove to the list
 
-point = (1, 2)
-point2 = (1,)
-point3 = ()
-point4 = (1, 2) + (3, 4)
-point5 = tuple([1, 2])
-point6 = tuple("Hello World")
-point7 = (1, 2, 3)
+# point = (1, 2)
+# point2 = (1,)
+# point3 = ()
+# point4 = (1, 2) + (3, 4)
+# point5 = tuple([1, 2])
+# point6 = tuple("Hello World")
+# point7 = (1, 2, 3)
 
-print(type(point))
-print(type(point2))
-print(type(point3))
-print(point4)
-print(point5)
-print(point6)
-print(point7[0:2])
+# print(type(point))
+# print(type(point2))
+# print(type(point3))
+# print(point4)
+# print(point5)
+# print(point6)
+# print(point7[0:2])
 
-x, y, z = point
-if 10 in point:
-    print("exists")
+# x, y, z = point
+# if 10 in point:
+#     print("exists")
 
-point[0] = 10
+# point[0] = 10
+
+
+# Swapping Variables
+x = 10
+y = 11
+
+x, y = y, x  # under the hood we are defining a Tupple and unpacking it on the left side
+a, b = 1, 2
+
+print("x", x)
+print("y", y)
