@@ -202,14 +202,31 @@
 # zip Function
 # combine multiple lists
 
-list1 = [1, 2, 3]
-list2 = [10, 20, 30]
+# list1 = [1, 2, 3]
+# list2 = [10, 20, 30]
 
-print(list(zip(list1, list2)))
+# print(list(zip(list1, list2)))
 
-# Stacks
-browsing_session = []
-browsing_session.append(1)
-browsing_session.pop()
-if not browsing_session:
-    browsing_session
+# # Stacks
+# LIFO - LAst In First Out
+
+# browsing_session = []
+# browsing_session.append(1)
+# browsing_session.pop()
+# if not browsing_session:
+#     browsing_session
+
+
+# Queues
+# FIFO - First In First Out
+
+from collections import deque
+
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()
+print(queue)
+if not queue:
+    print("empty")
