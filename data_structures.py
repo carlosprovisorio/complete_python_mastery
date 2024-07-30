@@ -321,10 +321,20 @@
 # values = [x * 2 for x in range(5)] # this will give the same list output
 # print(values)
 
-# We can also use the Comprehensions with Sets and dictionaries
-values = {x * 2 for x in range(5)}  # we get a Set of even numbers
-print(values)
+# # We can also use the Comprehensions with Sets and dictionaries
+# values = {x * 2 for x in range(5)}  # we get a Set of even numbers
+# print(values)
 
-# Dictionary
-values = {x: x * 2 for x in range(5)}
-print(values)
+# # Dictionary
+# values = {x: x * 2 for x in range(5)}
+# print(values)
+
+
+# Generator Expressions
+
+from sys import getsizeof
+
+values = (x * 2 for x in range(100))
+print("gen:", getsizeof(values))
+for x in values:
+    print(x)
