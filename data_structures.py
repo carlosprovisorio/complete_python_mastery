@@ -281,14 +281,31 @@
 # Sets
 # Sets is an unordered collection of unique items. We can't have duplicates and its
 
-numbers = [1, 1, 2, 3, 4]
-first = set(numbers)
-second = {1, 5}
+# numbers = [1, 1, 2, 3, 4]
+# first = set(numbers)
+# second = {1, 5}
 
-print(first | second)
-print(first & second)
-print(first - second)
-print(first ^ second)
+# print(first | second)
+# print(first & second)
+# print(first - second)
+# print(first ^ second)
 
-if 1 in first:
-    print("yes")
+# if 1 in first:
+#     print("yes")
+
+
+#Dictionaries - works like phone book phone -> contact or a 
+# A collection of key -> value pairs
+
+point = {"x": 1, "y": 2}
+point = dict(x=1, y=2)
+point = ["x"] = 10
+point = ["z"] = 20
+if "a" in point:
+    print(point["a"])
+print(point.get("a", 0))
+del point["x"]
+print(point)
+for key, value in point.items():
+    print(key, value)
+
