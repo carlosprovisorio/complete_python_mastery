@@ -259,11 +259,20 @@
 
 
 # Swapping Variables
-x = 10
-y = 11
+# x = 10
+# y = 11
 
-x, y = y, x  # under the hood we are defining a Tupple and unpacking it on the left side
-a, b = 1, 2
+# x, y = y, x  # under the hood we are defining a Tupple and unpacking it on the left side
+# a, b = 1, 2
 
-print("x", x)
-print("y", y)
+# print("x", x)
+# print("y", y)
+
+
+# Arrays
+# Use arrays only if you are using large sequence of numbers #like 1000s
+# items on the list otherwise use lists or tuples by default
+from array import array
+
+numbers = array("i", [1, 2, 3])
+numbers[0]
