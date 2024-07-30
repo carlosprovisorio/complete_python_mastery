@@ -393,3 +393,38 @@ most_reputable_char = char_count.most_common(1)[0]
 print(
     f"The most reputable character is '{most_reputable_char[0]}' with {most_reputable_char[1]} occurrences."
 )
+
+# Here are examples of each data type:
+
+
+# Numeric Types
+a = 42  # int
+b = 3.14  # float
+c = 1 + 2j  # complex
+
+# Sequence Types
+d = "hello"  # str
+e = [1, 2, 3]  # list
+f = (1, 2, 3)  # tuple
+g = range(0, 10)  # range
+
+# Set Types
+h = {1, 2, 3}  # set
+i = frozenset([1, 2, 3])  # frozenset
+
+# Mapping Type
+j = {"name": "John", "age": 25}  # dict
+
+# Boolean Type
+k = True  # bool
+
+# Binary Types
+l = b"hello"  # bytes
+m = bytearray(b"hello")  # bytearray
+n = memoryview(b"hello")  # memoryview
+
+# None Type
+o = None  # NoneType
+
+# Ellipsis Type
+p = ...  # ellipsis
