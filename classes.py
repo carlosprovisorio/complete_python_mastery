@@ -7,10 +7,13 @@
 
 
 class Point:
+    def __init__(self, x, y):  # Self is a reference to the current object
+        self.x = x
+        self.y = y
+
     def draw(self):
-        print("draw")
+        print(f"Point ({self.x}, {self.y})")
 
 
-point = Point()
-print(type(point))
-print(isinstance(point, Point))
+point = Point(1, 2)
+point.draw()
